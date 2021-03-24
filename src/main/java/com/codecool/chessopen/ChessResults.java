@@ -21,8 +21,8 @@ public class ChessResults {
             while (scanner.hasNext()) {
                 Scanner line = new Scanner(scanner.nextLine());
                 line.useDelimiter(",");
-                Integer points = (line.nextInt() + line.nextInt() + line.nextInt() + line.nextInt() + line.nextInt());
                 String name = line.next();
+                Integer points = (line.nextInt() + line.nextInt() + line.nextInt() + line.nextInt() + line.nextInt());
                 competitors.put(points, name);
             }
 
